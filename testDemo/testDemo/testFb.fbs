@@ -1,0 +1,24 @@
+
+namespace FBtest;
+
+table Car{
+    id:int;
+    number:long;
+    describle:string;
+}
+table Person{
+    id:int;
+    name:string;
+    code:long;
+    isVip:bool;
+    carList:[Car];
+}
+table RootType{
+    items:[Person];
+    stateid:int;
+    time:long;
+
+}
+
+root_type RootType;
+
